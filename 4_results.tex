@@ -1,23 +1,45 @@
 \section{Experimental Results}
 
+\subsection{Tuning System Gains}
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	Tuning the Kalman Filter gains is difficult and time consuming!
+	\begin{enumerate}
+		\item Gather baseline data for the \textbf{mobile phone}. Run, walk, straight line,
+		circle, square, etc.
+		\item Tune corresponding noise parameters for IMU and GPS position, speed and velocity data
+		until the extimated trajectory is accurate.
+	\end{enumerate}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	Tuning the Kalman Filter gains is difficult and time consuming!
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	Tuning the Controller Gains
+\end{frame}
+
+% ----------------------------------------------------------------------
+
 \begin{frame}{\thesection. \insertsection}
 	Video
 \end{frame}
 
 % ----------------------------------------------------------------------
 
-\begin{frame}{\thesection. \insertsection}
-	Analysis of results
-\end{frame}
-
-% ----------------------------------------------------------------------
-
-\begin{frame}{\thesection. \insertsection}
-	How to tune Kalman Filter gains
-\end{frame}
-
-% ----------------------------------------------------------------------
-
-\begin{frame}{\thesection. \insertsection}
-	Tuning the Controller Gains
+\begin{frame}{\thesection. \insertsection}	
+	Why did it slip at $50$ km/h ?
+	\begin{enumerate}
+		\item Close to top speed of the MAV 
+		\item We introduced a small delay before motor cutoff to allow the MAV to straighten out.
+		\item At these speeds, airflow around the car becomes significant.
+	\end{enumerate}
+	The last two points combined give the MAV just enough lift to slide backwards.
 \end{frame}
