@@ -1,0 +1,69 @@
+\section{Guidance and Control}
+
+\subsection{Long Distance Controller}
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	True Proportional Navigation 
+	\begin{align}
+		a_N = N \dot{\lambda} V
+	\end{align}
+	\begin{enumerate}
+	\item[$a_N$] Commanded acceleration normal to the MAV's velocity
+	\item[$N$] Navigation gain
+	\item[$\dot{\lambda}$] Change in line of sight vector
+	\item[$V$] Desired closing velocity
+	\end{enumerate}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	Why True Proportional Navigation?
+	\begin{enumerate}
+		\item Simplest variant of Proportional Navigation that worked
+		\item Car is assumed to move close to constant velocity
+	\end{enumerate}
+\end{frame}
+
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	Proportional Navigation graphics
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\subsection{Close Distance Controller}
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	Horizontal control : PID controller to match the velocity of the car\\
+	Vertical Control : Constant descent velocity
+	\begin{align}
+		a = K_p u + K_i \int u + K_d \dot{u}
+	\end{align}
+	\begin{enumerate}
+		\item[$a$] MAV acceleration
+		\item[$K_p$, $K_i$, $K_d$] Proportional, integral and derivative gain
+		\item[$u$] Relative position of the car w.r.t. the MAV 
+	\end{enumerate}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	PID graphics
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\subsection{Controller Switching}
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	We switch from long range PN to close range PID using a distance threshold. This distance
+	is tuned such that
+	\begin{enumerate}
+		\item Visual detection of the AprilTag is acquired
+		\item The outputs of both controllers are similar
+	\end{enumerate}
+	
+\end{frame}
+
+% ----------------------------------------------------------------------

@@ -1,0 +1,40 @@
+\documentclass{beamer}
+\usetheme[
+	titleformat=regular,
+	progressbar=foot
+	]{metropolis}
+\title{Autonomous Landing of a Multirotor Micro Air Vehicle on a High Velocity Ground Vehicle}
+\subtitle{Presented to IFAC WC 2017}
+\date{July 13th, 2017}
+\author{Borowczyk, Alexandre; Nguyen, Duc Tien; Nguyen, Andre Phu-Van; Nguyen, Dang-Quang; Saussie, David Alexandre; \textbf{Le Ny, Jerome}}
+%\institute{Mobile Robotics and Autonomous Systems Laboratory}
+%\titlegraphic{\hfill\includegraphics[height=1cm]{polytechnique_droite_promo_cmyk}}
+\titlegraphic{
+    \tikz[overlay,remember picture]
+        \node[at=(current page.south east), anchor=south east] {
+            \includegraphics[height=2.25cm]{polytechnique_genie_droite_eng_cmyk}
+        };
+}
+
+\definecolor{CardinalRed}{RGB}{172,29,55} 
+\definecolor{mBlack}{RGB}{0,0,0} 
+
+\setbeamercolor{frametitle}{bg=mBlack}
+\setbeamertemplate{section in toc}[sections numbered]
+%\setbeamertemplate{subsection in toc}[subsections numbered]
+
+\begin{document}
+  \maketitle
+  
+  \begin{frame}
+    \tableofcontents
+  \end{frame}
+
+\include{1_intro}
+\include{2_estimator}
+\include{3_control}
+\include{4_results}
+\include{5_conclusion}
+   
+  
+\end{document}
