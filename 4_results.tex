@@ -4,7 +4,7 @@
 \begin{frame}{\thesection. \insertsection \ - \insertsubsection}
 	Tuning the Kalman Filter gains is difficult and time consuming!
 	\begin{enumerate}
-		\item Gather baseline data for the \textbf{mobile phone}. Run, walk, straight line,
+		\item Gather baseline data for the \textbf{mobile phone}. Run and walk in a straight line,
 		circle, square, etc.
 		\item Tune corresponding noise parameters for IMU and GPS position, speed and velocity data
 		until the extimated trajectory is accurate.
@@ -14,16 +14,37 @@
 % ----------------------------------------------------------------------
 
 \begin{frame}{\thesection. \insertsection \ - \insertsubsection}
-	Tuning the Kalman Filter gains is difficult and time consuming!
 	\begin{enumerate}
-		\item 
+		\setcounter{enumi}{2}
+		\item Gather baseline flight data: Land on a static mobile phone, follow
+		phone and land on a moving phone.
+		\item Tune gains relating to the MAV INS and review mobile phone tuning until
+		the data reflects the flight test.
+	\end{enumerate}
+	No vision sensors yet!
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	\begin{enumerate}
+		\setcounter{enumi}{4}
+		\item Tune the gains for the vision sensors i.e. AprilTag detection by the gimbaled and fixed cameras.\\
+		We used a motion capture system to compare ground truth data and the filter's output.
+		\item \textbf{Final step} : Tune the filter as a whole on full landing tests and make sure 
+		there are no regressions on the baseline data. The goal is to tune the relative weights of all
+		sensors w.r.t each other.
+		
 	\end{enumerate}
 \end{frame}
 
 % ----------------------------------------------------------------------
 
 \begin{frame}{\thesection. \insertsection \ - \insertsubsection}
-	Tuning the Controller Gains
+	Tuning the \textbf{Controller Gains} is easier than the estimator gains.
+	\begin{itemize}
+		\item We use DJI's proprietary simulator 
+	\end{itemize}
 \end{frame}
 
 % ----------------------------------------------------------------------
