@@ -43,14 +43,45 @@
 \begin{frame}{\thesection. \insertsection \ - \insertsubsection}
 	Tuning the \textbf{Controller Gains} is easier than the estimator gains.
 	\begin{itemize}
-		\item We use DJI's proprietary simulator 
+		\item We use DJI's proprietary simulator to simulate the approach and landing phases in order to tune
+		the PN controller, the switching distance and the PD controller.
+		\item Flight tests allow validation and testing under windy conditions.
 	\end{itemize}
 \end{frame}
 
 % ----------------------------------------------------------------------
 
+
 \begin{frame}{\thesection. \insertsection}
-	Video
+	\begin{figure}
+		\includegraphics[width=0.8\paperwidth]{figures/pn.pdf}
+		\caption{Straight line trajectory test of the PN controller.}
+	\end{figure}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection}
+	\begin{figure}
+		\includegraphics[width=0.8\paperwidth]{figures/landing.pdf}
+		\caption{Side view of the MAV landing on a moving car at 50 km/h with only the close range controller.}
+	\end{figure}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	\begin{figure}
+		\includegraphics[width=0.8\paperwidth]{figures/landing_motion.pdf}
+		\caption{Kalman filter outputs during flight. Notice the INS' velocity output is invalid
+		when the MAV is on top of the landing platform.}
+	\end{figure}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{\thesection. \insertsection}
+	See video.
 \end{frame}
 
 % ----------------------------------------------------------------------
