@@ -46,8 +46,10 @@
 		a_\parallel = K_{p\parallel} u + K_{d\parallel} \dot{u} 
 	\end{align}
 	\begin{enumerate}
-		\item[$a_\parallel$] Acceleration parallel to the MAV's current velocity
+		\item[$a_\parallel$] Acceleration parallel to the line of sight
 		\item[$K_{p\parallel}$, $K_{d\parallel}$] Constant proportional and derivative gains
+		\item[$u$] Relative position of the car w.r.t the MAV
+		\item[$\dot{u}$] Relative velocity of the car w.r.t. the MAV \textit{projected on the line of sight vector}
 	\end{enumerate}
 \end{frame}
 
