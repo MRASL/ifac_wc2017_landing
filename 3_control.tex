@@ -77,6 +77,7 @@
 
 % ----------------------------------------------------------------------
 
+<<<<<<< HEAD
 %\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
 \begin{frame}{Long Range Controller}
 	\begin{itemize}
@@ -97,6 +98,19 @@
 	\end{align*}
 	\item We only navigate horizontally, with the $z$ coordinate controlled separately (typically constant)
 	\end{itemize}
+=======
+\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
+	Approach velocity PD control
+	\begin{align}
+		a_\parallel = K_{p\parallel} u + K_{d\parallel} \dot{u} 
+	\end{align}
+	\begin{enumerate}
+		\item[$a_\parallel$] Acceleration parallel to the line of sight
+		\item[$K_{p\parallel}$, $K_{d\parallel}$] Constant proportional and derivative gains
+		\item[$u$] Relative position of the car w.r.t the MAV
+		\item[$\dot{u}$] Relative velocity of the car w.r.t. the MAV \textit{projected on the line of sight vector}
+	\end{enumerate}
+>>>>>>> 2f2b2b43c1fa95bda180d6f452c5d230a9da5330
 \end{frame}
 
 % ----------------------------------------------------------------------
