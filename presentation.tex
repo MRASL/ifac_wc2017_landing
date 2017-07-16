@@ -1,12 +1,15 @@
 \documentclass{beamer}
+%\usepackage{multimedia}
+\usepackage{media9}
 \usetheme[
 	titleformat=regular,
 	progressbar=foot
 	]{metropolis}
 \title{Autonomous Landing of a Multirotor Micro Air Vehicle on a High Velocity Ground Vehicle}
-\subtitle{Presented to IFAC WC 2017}
+\subtitle{IFAC World Congress, Toulouse, France}
 \date{July 13th, 2017}
-\author{Borowczyk, Alexandre; Nguyen, Duc Tien; Nguyen, Andre Phu-Van; Nguyen, Dang-Quang; Saussie, David Alexandre; \textbf{Le Ny, Jerome}}
+%\author{Borowczyk, Alexandre; Nguyen, Duc Tien; Nguyen, Andre Phu-Van; Nguyen, Dang-Quang; Saussi\'e, David Alexandre; \textbf{Le Ny, Jerome}}
+\author{Alex Borowczyk, Duc Tien Nguyen, Andre Phu-Van Nguyen, Dang-Quang Nguyen, David Saussi\'e, \textbf{Jerome Le Ny}}
 %\institute{Mobile Robotics and Autonomous Systems Laboratory}
 %\titlegraphic{\hfill\includegraphics[height=1cm]{polytechnique_droite_promo_cmyk}}
 \titlegraphic{
@@ -20,19 +23,25 @@
 \definecolor{mBlack}{RGB}{0,0,0} 
 
 \setbeamercolor{frametitle}{bg=mBlack}
-\setbeamertemplate{section in toc}[sections numbered]
+%\setbeamertemplate{section in toc}[sections numbered]
 %\setbeamertemplate{subsection in toc}[subsections numbered]
 
 \begin{document}
   \maketitle
   
-  \begin{frame}
-    \tableofcontents
-  \end{frame}
 
+
+%\metroset{sectionpage=none}
 \include{1_intro}
-\include{2_estimator}
+%\metroset{sectionpage=progressbar}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
 \include{3_control}
+\include{2_estimator}
+
 \include{4_results}
 \include{5_conclusion}
    

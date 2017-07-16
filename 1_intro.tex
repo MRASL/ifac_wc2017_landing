@@ -1,28 +1,67 @@
-\section{Introduction}
+%\section{Motivation}
 
-\begin{frame}{\thesection. \insertsection}
-	Why land a micro aerial vehicle (MAV) on a moving car?
+%\begin{frame}{\thesection. \insertsection}
+\begin{frame}{Motivation}
+	Automatic landing of a micro aerial vehicle (MAV) on a moving ground vehicle (GV)
 	\begin{itemize}
-		\item Package delivery
-		\item Long distance deployments
-		\item Automatic fleet management
+		\item Package delivery, logistics
+		\item Long distance deployments (battery savings)
+		\item Benefits from heterogeneous capabilities (ex: monitoring) %Automatic fleet management
 	\end{itemize}
-	\begin{figure}[ht]
+	%\begin{figure}[ht]
         \begin{minipage}[b]{0.45\linewidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/ups.jpg}
-            \caption{MAV assisted deliveries by truck}
-            \label{fig:a}
+            \includegraphics[width=\textwidth]{figures/ups.jpg}\\
+            %\caption{MAV assisted deliveries by truck}
+            MAV assisted deliveries by truck
+            %\label{fig:a}
         \end{minipage}
         \hspace{0.5cm}
         \begin{minipage}[b]{0.45\linewidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/dji.png}
-            \caption{Truck based long range MAV deployments}
-            \label{fig:b}
+            \includegraphics[width=\textwidth]{figures/dji.png}\\
+            %\caption{Truck based long range MAV deployments}
+            Truck based long range MAV deployments
+            %\label{fig:b}
         \end{minipage}
-    \end{figure}
+     % \end{figure}
 \end{frame}
 
 % ----------------------------------------------------------------------
 
+\begin{frame}{System Set-Up}
+	%\begin{figure}[ht]
+        \begin{minipage}[t]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/m100.jpg}\\
+            %\caption{MAV assisted deliveries by truck}
+            %MAV assisted deliveries by truck
+            %\label{fig:a}
+        \end{minipage}
+        \hspace{0.5cm}
+        \begin{minipage}[t]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/car.png}\\
+            %\caption{Truck based long range MAV deployments}
+            %Truck based long range MAV deployments
+            %\label{fig:b}
+        \end{minipage}
+     % \end{figure}
+     \begin{center}
+     \includegraphics[width=0.5\textwidth]{figures/landing.png}
+     \end{center}
+\end{frame}
+
+\begin{frame}{Previous Work}
+
+\begin{itemize}
+\item Landing on a mobile platform 
+\textcolor{blue}{[Lange et al. ICAR'09; Yang et al. ICRA'15; Muskardin et al. ICRA'16; Kim et al. ICUAS'14; Ling 2014\ldots]}
+\vspace{0.5cm}
+\item Proportional navigation vs PID for target tracking with UAVs
+\textcolor{blue}{[Holt \& Beard JIRS'10; Gautham et al. ICUAS'15; Tan \& Kumar US'14; Lin \& Yang CACS'14\ldots]}
+\vspace{0.5cm}
+\item Focus here on multirotors and increasing GV speed
+\end{itemize}
+
+\end{frame}
