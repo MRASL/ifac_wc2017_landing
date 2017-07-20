@@ -77,28 +77,6 @@
 
 % ----------------------------------------------------------------------
 
-<<<<<<< HEAD
-%\begin{frame}{\thesection. \insertsection \ - \insertsubsection}
-\begin{frame}{Long Range Controller}
-	\begin{itemize}
-	\item	Approach velocity PD control
-	\begin{align*}
-		a_\parallel = \left( K_{p\parallel} |u| + K_{d\parallel} |\dot{u}| \right) \frac{u}{|u|} 
-	\end{align*}
-	$a_\parallel$ Acceleration parallel to the surrent LOS  \\ %MAV's current velocity 
-	$K_{p\parallel}$, $K_{d\parallel}$ Constant proportional and derivative gains
-	%\begin{enumerate}
-	%	\item[$a_\parallel$] Acceleration parallel to the MAV's current velocity
-	%	\item[$K_{p\parallel}$, $K_{d\parallel}$] Constant proportional and derivative gains
-	%\end{enumerate}
-	
-	\item The complete controller is the combination of both acceleration components
-	\begin{align*}
-		a = a_\perp + a_\parallel
-	\end{align*}
-	\item We only navigate horizontally, with the $z$ coordinate controlled separately (typically constant)
-	\end{itemize}
-=======
 \begin{frame}{\thesection. \insertsection \ - \insertsubsection}
 	Approach velocity PD control
 	\begin{align}
@@ -110,7 +88,6 @@
 		\item[$u$] Relative position of the car w.r.t the MAV
 		\item[$\dot{u}$] Relative velocity of the car w.r.t. the MAV \textit{projected on the line of sight vector}
 	\end{enumerate}
->>>>>>> 2f2b2b43c1fa95bda180d6f452c5d230a9da5330
 \end{frame}
 
 % ----------------------------------------------------------------------
